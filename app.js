@@ -31,17 +31,17 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/easteregg', eastereggRouter);
 app.use('/photos', photosRoutes);
-app.use('/photos/abstract', abstractRoutes);
-app.use('/photos/art', artRoutes);
-app.use('/photos/black', blackRoutes);
-app.use('/photos/city', cityRoutes);
-app.use('/photos/minimal', minimalRoutes);
-app.use('/photos/mountain', mountainRoutes);
-app.use('/photos/nature', natureRoutes);
-app.use('/photos/neon', neonRoutes);
-app.use('/photos/night', nightRoutes);
-app.use('/photos/space', spaceRoutes);
-app.use('/photos/wallpaper', wallpaperRoutes);
+app.use('/abstract', abstractRoutes);
+app.use('/art', artRoutes);
+app.use('/black', blackRoutes);
+app.use('/city', cityRoutes);
+app.use('/minimal', minimalRoutes);
+app.use('/mountain', mountainRoutes);
+app.use('/nature', natureRoutes);
+app.use('/neon', neonRoutes);
+app.use('/night', nightRoutes);
+app.use('/space', spaceRoutes);
+app.use('/wallpaper', wallpaperRoutes);
 
 
 module.exports = app;
