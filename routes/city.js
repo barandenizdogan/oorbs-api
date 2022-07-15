@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     const photo = req.body;
     city.push({ ...photo, Unid: uuidv4() }); 
-    res.send(`PHOTO WITH THE ID ${photo.Unid} ADDED TO DATABASE`);
+    res.send(`PHOTO WITH THE ID ${Unid} ADDED TO DATABASE`);
 });
 router.get('/:Unid', (req, res) => {
     const { Unid } = req.params;
