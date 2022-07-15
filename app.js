@@ -1,5 +1,3 @@
-var bodyParser = require('body-parser');
-
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
@@ -22,8 +20,6 @@ var spaceRoutes = require('./routes/space');
 var wallpaperRoutes = require('./routes/wallpaper');
 
 var app = express();
-
-app.use(bodyParser.json());
 
 app.use(logger('dev'));
 app.use(express.json());
