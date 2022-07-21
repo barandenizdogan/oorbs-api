@@ -123,7 +123,7 @@ router.delete('/:Unid', (req, res) => {
     abstract = abstract.filter((photo) => photo.Unid != Unid)
     res.send(`Photo with Unid ${Unid} deleted from the database.`);
 });
-router.patch('/:Unid', (req, res) => {
+router.put('/:Unid', (req, res) => {
     const { Unid } = req.params;
     const { full, download } = req.params;
     const photo = abstract.find((photo) => photo.Unid == Unid);
