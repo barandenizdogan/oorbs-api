@@ -123,9 +123,9 @@ router.delete('/:Unid', (req, res) => {
     space = space.filter((photo) => photo.Unid != Unid)
     res.send(`Photo with Unid ${Unid} deleted from the database.`);
 });
-router.patch('/:Unid', (req, res) => {
+router.put('/:Unid', (req, res) => {
     const { Unid } = req.params;
-    const { full, download } = req.params;
+    const { full, download } = req.body;
     const photo = space.find((photo) => photo.Unid == Unid);
     if(full) photo.full = full; 
     if(download) photo.download = download;
